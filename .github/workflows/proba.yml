@@ -1,8 +1,9 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow
 name: proba
 
-on:
+on: 
   workflow_dispatch:
+  [push]:
 
 jobs:
   build-and-test:
