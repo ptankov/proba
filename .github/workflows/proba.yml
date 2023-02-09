@@ -12,3 +12,4 @@ jobs:
     - name: Bahur
       run: |
         echo $USER
+        echo ${GITHUB_SHA::6}
