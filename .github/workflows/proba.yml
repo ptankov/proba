@@ -12,6 +12,5 @@ jobs:
     - name: Bahur
       run: |
         echo $USER
-        echo ${GITHUB_SHA::6}
-        echo ${GITHUB_SHA}
-        echo ${{ github.sha }}
+        echo ${GITHUB_SHA::8}
+        echo RUN_ID=${{ github.event.workflow_run.id }}
